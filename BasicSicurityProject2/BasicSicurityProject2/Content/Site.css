@@ -34,17 +34,23 @@ textarea {
 
 .homeRegisterContent {
     margin-top: 5px;
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> 27310f3c5ece2820fb4cd8ae5af7c8cd84df436f
 .chatIndexBodyBorder {
     border: 2px solid black;
-   border-top-right-radius: 30px;
-border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     margin: 10px;
 }
 
 .chatIndexContactBorder {
-      border: 1px solid black;
+    border: 1px solid black;
     margin: 5px;
+<<<<<<< HEAD
+=======
     
 
 }
@@ -58,5 +64,12 @@ border-bottom-left-radius: 30px;
 .chatIndexInputArea {
     height: 50px;
     width: 100%;
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> refs/remotes/origin/master
+>>>>>>> 2bea12c63c934c7bf37ae314b4a38b1b30f4ee00
+>>>>>>> b5892d5a2e0491f4ff05bf8981b772f59cc132b7
+>>>>>>> 27310f3c5ece2820fb4cd8ae5af7c8cd84df436f
 }
