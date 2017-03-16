@@ -26,5 +26,12 @@ namespace BasicSicurityProject2.Controllers
 
             return View();
         }
+        public ActionResult Register()
+        {
+            ViewBag.Message = "dit is greg zijn deel";
+
+            return View();
+        }
+
     }
 }
