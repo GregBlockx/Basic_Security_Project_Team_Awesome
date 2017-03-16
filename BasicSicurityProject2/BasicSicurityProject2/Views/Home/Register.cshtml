@@ -3,5 +3,49 @@
     ViewBag.Title = "Register";
 }
 
-<h2>Register</h2>
+<link href="~/Content/Site.css" rel="stylesheet" />
+<div class="row">
+    <div class="col-md-10 col-md-offset-1 jumbotron">
+        <h2 id="homeRegisterTitle">Register</h2>
+    </div>
 
+    <div id="homeRegisterBody" class="col-md-8 col-md-offset-2">
+        <form>
+            <div class="col-md-10">
+                <label class="homeRegisterContent col-md-5">Username:</label>
+                <input class="homeRegisterContent col-md-5" type="text" name="usernameTextbox" />
+            </div>
+
+            <br />
+                
+            <div class="col-md-10">
+                <label class="homeRegisterContent col-md-5">Password:</label>
+                <input class="homeRegisterContent col-md-5" type="password" name="passwordBox" />
+            </div>             
+            
+            <br />
+            
+            <div class="col-md-10">
+                <label class="homeRegisterContent col-md-5">Confirm password:</label>
+                <input class="homeRegisterContent col-md-5" type="password" name="confPasswordbox" />
+            </div>
+            
+
+            <br />
+            
+            <div class="col-md-10">
+                <input class="homeRegisterContent col-md-1" type="checkbox" name="coptcha" value="Coptacha" />
+                <label class="homeRegisterContent col-md-7">Coptacha</label>
+            </div>
+           
+           
+
+            <br />
+            
+            <div class="col-md-10">
+                <input class="homeRegisterContent col-md-3" type="submit" value="Register" />
+            </div>
+            
+        </form>
+    </div>
+</div>
