@@ -22,3 +22,16 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#homeRegisterTitle {
+    text-align: center;
+}
+
+#homeRegisterBody {
+    border: dotted 5px lightgray;
+    margin-top: 5px;
+}
+
+.homeRegisterContent {
+    margin-top: 5px;
+}
