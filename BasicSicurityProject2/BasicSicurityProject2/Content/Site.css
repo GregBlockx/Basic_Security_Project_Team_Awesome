@@ -22,3 +22,16 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.chatIndexBodyBorder {
+    border: 2px solid black;
+   border-top-right-radius: 30px;
+border-bottom-left-radius: 30px;
+    margin: 10px;
+}
+
+.chatIndexContactBorder {
+      border: 1px solid black;
+    margin: 5px;
+    
+}
