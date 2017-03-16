@@ -16,13 +16,16 @@
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
+/*MOESTEN ER PROBLEMEN ZIJN MET TEXTAREA EERST NAAR DIT KIJKEN */
 input,
 select,
 textarea {
-    max-width: 280px;
+  
+    width: 100%;
+    resize: none;
 }
 
+<<<<<<< HEAD
 .homeIndexButton{
     margin-left: 140px;
     margin-right: 5px;
@@ -37,3 +40,56 @@ textarea {
     border: dotted 5px lightgray;
     padding: 30px;
 }
+=======
+#homeRegisterTitle {
+    text-align: center;
+}
+
+#homeRegisterBody {
+    border: dotted 5px lightgray;
+    margin-top: 5px;
+}
+
+.homeRegisterContent {
+    margin-top: 5px;
+
+}
+
+.chatIndexBodyBorder {
+    border: 2px solid black;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin: 10px;
+}
+
+.chatIndexContactBorder {
+    border: 1px solid black;
+    margin: 5px;
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> dde511ff45907ece260ab82dba096d58a8578c51
+}
+.chatIndexChatBoxBorder {
+    border: 1px solid black;
+    margin: 18px;
+    height: 70%;
+}
+.chatIndexInput {
+    border: 1px solid black; 
+}
+.chatIndexInputArea {
+    height: 50px;
+    width: 100%;
+<<<<<<< HEAD
+=======
+    height: 15%;
+    margin: 2%;
+
+}
+.chatIndexButtons {
+    margin: 15px;
+>>>>>>> dde511ff45907ece260ab82dba096d58a8578c51
+}
+>>>>>>> 80ffcedf49edb5abfea37e2b29b114bd1a393d3b
