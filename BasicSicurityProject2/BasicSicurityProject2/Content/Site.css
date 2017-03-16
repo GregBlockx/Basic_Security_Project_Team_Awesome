@@ -45,10 +45,6 @@ textarea {
 .chatIndexContactBorder {
     border: 1px solid black;
     margin: 5px;
-<<<<<<< HEAD
-=======
-    
-<<<<<<< HEAD
 }
 .chatIndexChatBoxBorder {
     border: 1px solid black;
@@ -60,8 +56,4 @@ textarea {
 .chatIndexInputArea {
     height: 50px;
     width: 100%;
-=======
->>>>>>> refs/remotes/origin/master
->>>>>>> 2bea12c63c934c7bf37ae314b4a38b1b30f4ee00
->>>>>>> b5892d5a2e0491f4ff05bf8981b772f59cc132b7
 }
