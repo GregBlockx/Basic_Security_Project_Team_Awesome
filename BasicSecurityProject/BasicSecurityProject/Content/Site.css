@@ -22,3 +22,7 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#homeRegisterHeader {
+    border: solid 5px black;
+}
