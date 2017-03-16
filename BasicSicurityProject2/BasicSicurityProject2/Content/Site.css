@@ -35,3 +35,14 @@ border-bottom-left-radius: 30px;
     margin: 5px;
     
 }
+.chatIndexChatBoxBorder {
+    border: 1px solid black;
+    margin: 18px;
+}
+.chatIndexInput {
+    border: 1px solid black; 
+}
+.chatIndexInputArea {
+    height: 50px;
+    width: 100%;
+}
