@@ -25,7 +25,6 @@ textarea {
     resize: none;
 }
 
-<<<<<<< HEAD
 .homeIndexButton{
     margin-left: 140px;
     margin-right: 5px;
@@ -40,7 +39,7 @@ textarea {
     border: dotted 5px lightgray;
     padding: 30px;
 }
-=======
+
 #homeRegisterTitle {
     text-align: center;
 }
@@ -65,12 +64,8 @@ textarea {
 .chatIndexContactBorder {
     border: 1px solid black;
     margin: 5px;
-<<<<<<< HEAD
-=======
-    
-
->>>>>>> dde511ff45907ece260ab82dba096d58a8578c51
 }
+
 .chatIndexChatBoxBorder {
     border: 1px solid black;
     margin: 18px;
@@ -82,14 +77,11 @@ textarea {
 .chatIndexInputArea {
     height: 50px;
     width: 100%;
-<<<<<<< HEAD
-=======
     height: 15%;
     margin: 2%;
 
 }
 .chatIndexButtons {
     margin: 15px;
->>>>>>> dde511ff45907ece260ab82dba096d58a8578c51
 }
->>>>>>> 80ffcedf49edb5abfea37e2b29b114bd1a393d3b
+
