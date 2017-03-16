@@ -22,14 +22,3 @@ select,
 textarea {
     max-width: 280px;
 }
-
-<<<<<<< HEAD
-#homeRegisterHeader {
-    border: solid 5px black;
-}
-=======
-.chatIndexBorder {
-    border: 2px solid black;
-
-}
->>>>>>> 21e4acb50dd76a2d163dbe063414afe765f3d2bc
