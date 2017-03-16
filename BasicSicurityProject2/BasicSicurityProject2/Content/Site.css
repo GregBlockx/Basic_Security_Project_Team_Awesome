@@ -23,7 +23,6 @@ textarea {
     max-width: 280px;
 }
 
-<<<<<<< HEAD
 #homeRegisterTitle {
     text-align: center;
 }
@@ -35,17 +34,15 @@ textarea {
 
 .homeRegisterContent {
     margin-top: 5px;
-=======
+
 .chatIndexBodyBorder {
     border: 2px solid black;
-   border-top-right-radius: 30px;
-border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     margin: 10px;
 }
 
 .chatIndexContactBorder {
-      border: 1px solid black;
+    border: 1px solid black;
     margin: 5px;
-    
->>>>>>> refs/remotes/origin/master
 }
