@@ -29,21 +29,41 @@ namespace EncryptionTest
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-        
 
-           // var keyPair = CreateKeyPair();
-           // string privateKey = keyPair.Item1;
-           // string publicKey = keyPair.Item2;
 
-           // byte[] encrytBytes = Encrypt(publicKey, textBox.Text);
+           
 
-           // textBox1.Text = System.Text.Encoding.ASCII.GetString(encrytBytes);
+            // byte[] encrytBytes = Encrypt(publicKey, textBox.Text);
 
-           //textBox2.Text = Decrypt(privateKey, encrytBytes);
-            byte[] salt = GenSalt();
+            // textBox1.Text = System.Text.Encoding.ASCII.GetString(encrytBytes);
+
+            //textBox2.Text = Decrypt(privateKey, encrytBytes);
+
+
+            //encrypt
+            //lijn 1 van word
             byte[] key = CreateAesKey();
 
-          string encrypted =  EncryptAes(textBox.Text, salt, key);
+            //lijn 2 van word (alice)
+            var keyPair1 = CreateKeyPair();
+            string privateKey1 = keyPair1.Item1;
+            string publicKey1 = keyPair1.Item2;
+
+            //lijn 3 van word (bob)
+            var keyPair2 = CreateKeyPair();
+            string privateKey2 = keyPair2.Item1;
+            string publicKey2 = keyPair2.Item2;
+
+            //lijn 4 van word
+            string input = textBox.Text;
+
+            //lijn 5 van word
+            byte[] salt = GenSalt();
+            string encrypted = EncryptAes(input, salt, key);
+
+            //lijn 6 van word
+            byte[] EncryptsymmetricKey = Encrypt(publicKey2, textBox.Text);
+
 
             textBox1.Text = encrypted;
 
