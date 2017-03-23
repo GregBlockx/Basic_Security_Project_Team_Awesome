@@ -26,11 +26,13 @@ textarea {
 }
 
 .homeIndexButton{
-    margin-left: 140px;
+    margin-top: 10px;
+    margin-left: 362px;
     margin-right: 5px;
 }
 
 .homeIndexTextBox{
+    width: 100%;
     margin-top: 4px;
     margin-bottom: 5px;
 }
