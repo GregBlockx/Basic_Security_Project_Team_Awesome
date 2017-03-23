@@ -41,12 +41,13 @@ namespace EncryptionTest
 
            //textBox2.Text = Decrypt(privateKey, encrytBytes);
             byte[] salt = GenSalt();
+            byte[] key = CreateAesKey();
 
-          string encrypted =  EncryptAes(textBox.Text, salt);
+          string encrypted =  EncryptAes(textBox.Text, salt, key);
 
             textBox1.Text = encrypted;
 
-            textBox2.Text = DecryptAes(encrypted, salt);
+            textBox2.Text = DecryptAes(encrypted, salt , key);
 
 
 
@@ -139,15 +140,15 @@ namespace EncryptionTest
         }
 
         //second try encryot with aes
-        private string EncryptAes(string clearText , byte[] salt)
+        private string EncryptAes(string clearText , byte[] salt, byte[] encreptionKey)
         {
           
 
-            string EncryptionKey = "MAKV2SPBNI9921";
+           // string EncryptionKey = "MAKV2SPBNI9921";
             byte[] clearBytes = Encoding.Unicode.GetBytes(clearText);
             using (Aes encryptor = Aes.Create())
             {
-                Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, salt);
+                Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(encreptionKey, salt, 1);
                 encryptor.Key = pdb.GetBytes(32);
                 encryptor.IV = pdb.GetBytes(16);
                 using (MemoryStream ms = new MemoryStream())
@@ -164,13 +165,13 @@ namespace EncryptionTest
         }
 
         //second try decrypt with aes
-        private string DecryptAes(string cipherText,  byte[] salt)
+        private string DecryptAes(string cipherText,  byte[] salt, byte[] encreptionKey)
         {
-            string EncryptionKey = "MAKV2SPBNI9921";
+           // string EncryptionKey = "MAKV2SPBNI9921";
             byte[] cipherBytes = Convert.FromBase64String(cipherText);
             using (Aes encryptor = Aes.Create())
             {
-                Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, salt);
+                Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(encreptionKey, salt, 1);
                 encryptor.Key = pdb.GetBytes(32);
                 encryptor.IV = pdb.GetBytes(16);
                 using (MemoryStream ms = new MemoryStream())
