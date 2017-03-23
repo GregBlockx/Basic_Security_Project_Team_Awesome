@@ -9,18 +9,22 @@
 <div class="row">
     <div class="col-md-4">
     </div>
-    <div class="col-md-4" id="homeIndexDiv">
-        <div class="col-md-4">
-            <p>Username : </p>
-            <p>Password : </p>
+        <div id="homeRegisterBody" class="col-md-8 col-md-offset-2">
+            <div class="col-md-10">
+                <label class="homeRegisterContent col-md-5">Username:</label>
+                <input class="homeRegisterContent col-md-5" type="text" name="usernameTextbox" />
+            </div>
+
+            <br />
+
+            <div class="col-md-10">
+                <label class="homeRegisterContent col-md-5">Password:</label>
+                <input class="homeRegisterContent col-md-5" type="password" name="passwordBox" />
+            </div>
+            <br />
+            <button class="homeIndexButton" onclick="window.location.href='/Chat/Index'">Login</button>
+            <button onclick="window.location.href='/Home/Register'">Registreer</button>
         </div>
-        <div class="col-md-3">
-            <input type="text" name="user"><br>
-            <input type="password" class="homeIndexTextBox" name="password"><br />
-        </div><br /><br /><br />
-        <button class ="homeIndexButton" onclick="window.location.href='/Chat/Index'">Login</button>
-        <button onclick="window.location.href='/Home/Register'">Registreer</button>
-    </div>
     <div class="col-md-4">
     </div>
 </div>
