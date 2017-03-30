@@ -11,6 +11,10 @@
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="25" Margin="122,73,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="184"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="122,122,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="184"/>
         <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="121,164,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="184"/>
+        <Label x:Name="label" Content="encryption" HorizontalAlignment="Left" Margin="121,48,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="hashing" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="344,30,0,0" RenderTransformOrigin="0.661,0.852"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="353,74,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="353,122,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
