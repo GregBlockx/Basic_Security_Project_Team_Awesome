@@ -38,6 +38,12 @@ namespace EncryptionTest
             // textBox1.Text = System.Text.Encoding.ASCII.GetString(encrytBytes);
 
             //textBox2.Text = Decrypt(privateKey, encrytBytes);
+     //       string inputHash = textBox3.Text;
+
+//            string hashedString = sha256_hash(inputHash);
+
+    //        textBox4.Text = hashedString;
+
 
 
             //encrypt
@@ -45,29 +51,77 @@ namespace EncryptionTest
             byte[] key = CreateAesKey();
 
             //lijn 2 van word (alice)
-            var keyPair1 = CreateKeyPair();
-            string privateKey1 = keyPair1.Item1;
-            string publicKey1 = keyPair1.Item2;
+            var alice = CreateKeyPair();
+            string alicePrivate = alice.Item1;
+            string alicePublic = alice.Item2;
 
             //lijn 3 van word (bob)
-            var keyPair2 = CreateKeyPair();
-            string privateKey2 = keyPair2.Item1;
-            string publicKey2 = keyPair2.Item2;
+            var bob = CreateKeyPair();
+            string bobPrivate = bob.Item1;
+            string bobPublic = bob.Item2;
 
             //lijn 4 van word
-            string input = textBox.Text;
+            string inputAlice = textBox.Text;
 
             //lijn 5 van word
             byte[] salt = GenSalt();
-            string encrypted = EncryptAes(input, salt, key);
+            string file1 = EncryptAes(inputAlice, salt, key);
 
-            //lijn 6 van word
-            byte[] EncryptsymmetricKey = Encrypt(publicKey2, textBox.Text);
+            //lijn 6 van 
+            //omzetten van byte array naar sting kan fout zijn
+            byte[] file2 = Encrypt(bobPublic, System.Text.Encoding.Default.GetString(key));
+
+            //lijn 7
+            string hashedInputAlice = sha256_hash(inputAlice);
+
+            //lijn 8
+            byte[] file3 = Encrypt(alicePrivate, hashedInputAlice);
 
 
-            textBox1.Text = encrypted;
+            //decrypt
+            //lijn1
+            //gwn ophalen ma ik heb de gegevens al
 
-            textBox2.Text = DecryptAes(encrypted, salt , key);
+            //lijn2
+
+            string decryptedSymKey = Decrypt(bobPrivate, file2);
+
+            //lijn3
+            //kan fout zijn
+            byte[] toBytes = Encoding.Default.GetBytes(decryptedSymKey);
+            textBox3.Text = System.Text.Encoding.Default.GetString(key);
+            textBox4.Text = decryptedSymKey;
+
+            if (textBox3.Text.Equals(textBox4.Text))
+            {
+                MessageBox.Show("het zelfde");
+            }
+            else
+            {
+                MessageBox.Show("niet zelfde");
+            } 
+
+
+            // key zou eigelijk tobytes meoten zijn
+            textBox1.Text = DecryptAes(file1, salt, toBytes);
+
+            //lijn 4
+            string checkHash = sha256_hash(textBox1.Text);
+
+            if (hashedInputAlice.Equals(checkHash))
+            {
+                textBox2.Text = "true";
+            }
+            else
+            {
+                textBox2.Text = "false";
+            }
+
+
+
+            //   textBox1.Text = file1;
+
+            //  textBox2.Text = DecryptAes(file1, salt , key);
 
 
 
@@ -207,6 +261,23 @@ namespace EncryptionTest
             return cipherText;
         }
 
+        //hashing
+
+        public static String sha256_hash(String value)
+        {
+            StringBuilder Sb = new StringBuilder();
+
+            using (SHA256 hash = SHA256.Create())
+            {
+                Encoding enc = Encoding.UTF8;
+                Byte[] result = hash.ComputeHash(enc.GetBytes(value));
+
+                foreach (Byte b in result)
+                    Sb.Append(b.ToString("x2"));
+            }
+
+            return Sb.ToString();
+        }
 
         ////encrypt with AES
         //public byte[] AES_Encrypt(byte[] bytesToBeEncrypted, byte[] passwordBytes)
