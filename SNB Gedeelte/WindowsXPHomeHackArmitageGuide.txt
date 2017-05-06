@@ -1,0 +1,19 @@
+Halllo, ik ben Greg Blockx.
+Dit filmpje toont je hoe je een Windows XP Home Client hackt via Kali en armitage.
+
+1.  Als eerste moeten we armitage starten via het commando "service postgresql start" en vervolgens "armitage". Daarna klik je op "connect" en "yes". Nu zal armitage beginnen met opstarten.
+    Iets wat je zeker niet over het hoofd mag zien is dat je de firewall van de Windows XP Client afzet.
+
+2.  Vervolgens gaan we een target moeten toevoegen. Hiervoor heb je het ip-adres van de Windows XP Client nodig. Deze vind je door het cmd venster te openen op de Windows XP Client en
+    het "ipconfig" commando in te geven. Na je dit gedaan hebt klik je op "hosts" in armitage en dan op "add hosts" dan kan je het ip-adres van de Windows XP Client ingeven en op "add" klikken.
+
+3.1 Nu moeten we de Windows XP Client scannen. Dit doe je door rechts te klikken op het target en dan kies je voor "scan". Als deze scan voltooid is rechtklik je op het target en klik je op "host"
+    en daarna op "Operating System" en dan kies je voor de optie XP.
+
+3.2 Als extra kan je een aantal scan errors verbeteren. Dit doe je door in het commandprompt "set RHOSTS [ip-adres target]" en daaran "run" te typen. Dit kan je blijven typen tot alle errors zijn opgelost.
+
+4.  Vervolgens gaan we alle attacks zoeken die mogelijk zijn op het target. Dit doe je als volgt: klik op "attacks" en daarna op "find attacks".
+
+5.  Als alle attacks zijn gevonden kan je rechtsklikken op het target en dan kan je kiezen voor "attack". Hier klik je op de ms08_067 netapi exploit en vervolgens klik je op "launch" wanneer de popup verschijnt.
+
+6.  Nu is het target vulnerable. Nu kan je dus indringen op het systeem van de Windows XP Client. In de video zie je enkele voorbeelden. 
