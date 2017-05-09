@@ -12,9 +12,10 @@ namespace databaseConnectionTest.Models
 {
     public class login
     {
+        
         public login()
         {
-            
+           
         }
         [Key]
         public int loginID { get; set; }
