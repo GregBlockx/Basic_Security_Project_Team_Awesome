@@ -1,0 +1,86 @@
+Basic Security Examen:
+
+grijze achtergrond = niet kennen !!!
+
+cryptografie:
+	3 eigenschappen
+	Wat is stenografie?
+	substitutiecijfersysteem CAESAR substitutie
+	KOLOMtranspositie
+Symmetrische Cryptografie:
+	voor en na delen
+	algorihtmes als vb geven
+	figuren kunnes uitleggen
+	DES
+	DES Matrix kunnen uitleggen
+	subkey berekening
+	alle functies
+	everlange effect
+	weakkeys bij DES
+Assymetrische Cryptografie:
+	voor en na delen
+	meest gebruikte algorithme
+	welke 4 wiskundige principes !!!!!!!
+Hashing + digitale handtekening:
+	voorbeelden
+	pure one way !
+	praktijk collision free
+	digitale handtekening
+	leg uit hybrid cryptografie aan de hand van een tekenening en duid de 4 grote principes aan !!! (HOOFDVRAAG)
+	Attacks op Hash kennen
+	Salting
+	Rainbowtables
+PKI Architecture:
+	leg uit wat is een certificaat !
+	hoofdvraag leg uit verschillende delen van een PKI bedrijf !!!!!	
+VPN:
+	IP sec tunnel mode / transport mode
+	SSL	
+E-mail security:
+	veilig email verkeer + 2 flavors uitleggen
+	handshake vanbuiten kennen !
+SET:
+	NIET KENNEN !!!
+Firewalls:
+	proxy en statefull
+Virussen en Worms:
+	leg uit wat is een worm
+	kenmerken van virussen lezen
+Trojans en Rootkits:
+	wat is een rootkit
+	trojans lezen
+Sniffers:
+	meest gebruikte
+	netwerk kaart speciale modus
+	black side en white side
+	bebscherming lezen
+Spoofing:
+	TCP Spoof kennen
+	manieren van spoofing
+	backdoor
+	ip filtering (bijvraag)
+	ARP Poisoning
+DDOS attack:
+	syn flood
+	ping of death
+	smurf attack
+	manier webserver down te brengen
+	structuur DDOS
+	email bommen niet !
+Port scanners:
+	wat is een port scanner
+	bekendste nmap
+	leg vulnerablity scanners uit
+	yt filmpje niet kennen
+IDS:
+	verschil IDS en IPS
+	signature base en anonumous base verschil
+	(tripwire en osec)
+Log managment & SIEM + privacy:
+	wat is een SIEM server
+	privacy
+	cookie
+	cross side voor cookies te stelen
+	webbugs niet kennen
+	Syslogs
+	
